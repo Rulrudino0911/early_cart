@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f0f0f0;
+}
+
+.cart-container {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.placeholder {
+  text-align: center;
+  color: #888;
+  margin-top: 2em;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 16px;
+  padding: 1em;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  justify-content: space-between;
+}
+
+.item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+
+.item-info {
+  flex-grow: 1;
+  margin-left: 1em;
+}
+
+.item-name {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.item-count {
+  color: #3366cc;
+  font-weight: bold;
+  margin-left: 0.4em;
+  font-size: 0.9em;
+}
+
+.item-price {
+  font-size: 0.9em;
+  margin-top: 0.2em;
+  color: #444;
+}
+
+.item-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.item-controls button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  background: #eee;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.item-controls .delete {
+  margin-left: 1em;
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  color: #333;
+}
+
+.total-bar {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background: #3366ff;
+  color: white;
+  border-radius: 999px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: bold;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}

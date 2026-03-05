@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NFC Smart Cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cart-container" id="cart">
+    <p class="placeholder">NFC Tag Scanning...</p>
+  </div>
+
+  <div class="total-bar" onclick="clearCart()">
+    <span>total <span id="total-qty">0</span> products</span>
+    <strong id="total-price">0 won</strong>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
